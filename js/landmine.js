@@ -54,7 +54,7 @@ $("#save").on("click", function () {
     for (i = 0; i < H; i++){
         let gyou = '<tr>' //'<tr id="' + i + 'gyou">'
         for (j = 0; j < W; j++){
-            const idx = i * W + j
+            const idx = i * MAX + j
             // console.log(idx);
             // gyou += '<td id="' + idx + 'ban"></td>'
             gyou += `
@@ -139,7 +139,7 @@ var banmen = document.getElementById("field");//テーブルを取得
 //     alert("ZZ")
 // });
 
-const MAX = 5;
+const MAX = 50;
 var remember = [];
 var answer = [];
 for (let i = 0; i < MAX*MAX; i++){
