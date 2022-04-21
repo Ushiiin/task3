@@ -26,7 +26,7 @@ $("#generator").on("click", function () {
     for (i = 0; i < H; i++){
         let gyou = '<tr>' //'<tr id="' + i + 'gyou">'
         for (j = 0; j < W; j++){
-            const idx = i * W + j
+            const idx = i * MAX + j
             // console.log(idx);
             // gyou += '<td id="' + idx + 'ban"></td>'
             gyou += `
@@ -161,6 +161,7 @@ for (i = 0; i < MAX; i++){
                 remember[now_ind] ^= 1;
             } else{
                 answer[now_ind] ^= 1;
+                console.log(now_ind);
             }
             
             // console.log(REM);
